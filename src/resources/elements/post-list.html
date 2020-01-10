@@ -1,0 +1,13 @@
+<template bindable="error, posts">
+  <require from="./blog-post"></require>
+
+  <slot></slot>
+
+  <div repeat.for="post of posts">
+    <blog-post post.bind="post">
+      <p slot="slot1">test</p>
+      <a route-href="route: post-view; params.bind: {slug: post.slug}" class="btn btn-primary">Read More &raquo;</a>
+    </blog-post>
+  </div>
+
+</template>

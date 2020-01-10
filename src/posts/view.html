@@ -1,0 +1,11 @@
+<template>
+  <require from="../resources/elements/blog-post"></require>
+  <require from="../resources/value-converters/date-format"></require>
+  <div class="alert alert-danger" if.bind="error.message != ''">
+    ${error}
+  </div>
+
+  <blog-post post.bind="post">
+  </blog-post>
+
+</template>

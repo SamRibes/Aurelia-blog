@@ -1,0 +1,109 @@
+
+# You may want to customise this file depending on your Operating System
+# and the editor that you use.
+#
+# We recommend that you use a Global Gitignore for files that are not related
+# to the project. (https://help.github.com/articles/ignoring-files/#create-a-global-gitignore)
+
+# OS
+#
+# Ref: https://github.com/github/gitignore/blob/master/Global/macOS.gitignore
+# Ref: https://github.com/github/gitignore/blob/master/Global/Windows.gitignore
+# Ref: https://github.com/github/gitignore/blob/master/Global/Linux.gitignore
+.DS_STORE
+Thumbs.db
+
+# Editors
+#
+# Ref: https://github.com/github/gitignore/blob/master/Global
+# Ref: https://github.com/github/gitignore/blob/master/Global/JetBrains.gitignore
+# Ref: https://github.com/github/gitignore/blob/master/Global/VisualStudioCode.gitignore
+.idea
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+# Dependencies
+node_modules
+
+# Compiled files
+/scripts
+/src/environment.js
+/src/environment.ts
+/dist
+/test/coverage-jest
+/test/coverage-karma
+
+
+node_modules
+config.js
+bower_components
+.idea
+.DS_STORE
+/dist
+build/reports
+tests/coverage-jest/**/*.*
+test/e2e/dist
+/typings
+/export
+Features/dist
+.npmrc
+localenvironment.json
+/.vscode/**/*
+sassvars.json
+*.stackdump
+index.html
+.chrome
+static/*.css
+lint
+
+.chrome/chrome_shutdown_ms.txt
+.chrome/CrashpadMetrics-active.pma
+.chrome/Local State
+.chrome/BrowserMetrics/BrowserMetrics-5E14B118-1F74.pma
+.chrome/Crashpad/metadata
+.chrome/Default/Current Session
+.chrome/Default/Current Tabs
+.chrome/Default/Favicons
+.chrome/Default/History
+.chrome/Default/History Provider Cache
+.chrome/Default/Network Action Predictor
+.chrome/Default/Network Persistent State
+.chrome/Default/Preferences
+.chrome/Default/Secure Preferences
+.chrome/Default/Top Sites
+.chrome/Default/TransportSecurity
+.chrome/Default/Visited Links
+.chrome/Default/AutofillStrikeDatabase/LOG
+.chrome/Default/BudgetDatabase/LOG
+.chrome/Default/Cache/data_0
+.chrome/Default/Cache/data_1
+.chrome/Default/Cache/data_2
+.chrome/Default/Cache/data_3
+.chrome/Default/Cache/index
+.chrome/Default/Code Cache/js/index-dir/the-real-index
+.chrome/Default/Extension State/000003.log
+.chrome/Default/Extension State/LOG
+.chrome/Default/Feature Engagement Tracker/AvailabilityDB/000003.log
+.chrome/Default/Feature Engagement Tracker/AvailabilityDB/LOG
+.chrome/Default/Feature Engagement Tracker/EventDB/LOG
+.chrome/Default/GCM Store/Encryption/LOG
+.chrome/Default/GPUCache/index
+.chrome/Default/Platform Notifications/LOG
+.chrome/Default/Session Storage/000003.log
+.chrome/Default/Session Storage/LOG
+.chrome/Default/Site Characteristics Database/000003.log
+.chrome/Default/Site Characteristics Database/LOG
+.chrome/Default/Sync Data/LevelDB/LOG
+.chrome/Default/data_reduction_proxy_leveldb/000003.log
+.chrome/Default/data_reduction_proxy_leveldb/CURRENT
+.chrome/Default/data_reduction_proxy_leveldb/LOG
+.chrome/Default/data_reduction_proxy_leveldb/MANIFEST-000002
+.chrome/Default/shared_proto_db/metadata/LOG
+.chrome/ShaderCache/GPUCache/data_0
+.chrome/ShaderCache/GPUCache/data_1
+.chrome/ShaderCache/GPUCache/data_3
+.chrome/ShaderCache/GPUCache/index
+.vscode/launch.json

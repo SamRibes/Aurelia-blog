@@ -1,0 +1,21 @@
+<template>
+
+  <require from="../value-converters/date-format"></require>
+  
+  <div class="card mb-4" if.bind="!error">
+    <div class="card-body">
+      <h2 class="card-title"> ${post.title} </h2>
+      <p class="card-text">${post.body}</p>
+      <a show.bind="post.body.length <= 203" route-href="route: post-view; params.bind: {slug: post.slug}" class="btn btn-primary">Read More &raquo;</a>
+    </div>
+
+    <div class="card-footer text-muted">
+      Created at ${post.createdAt | dateFormat}
+      <a route-href="route: tag-view; params.bind: {tag}" repeat.for="tag of post.tags">
+        <span class="badge badge-pill badge-info">${tag}</span>
+      </a>
+    </div>
+  </div>
+
+  <hr/>
+</template>

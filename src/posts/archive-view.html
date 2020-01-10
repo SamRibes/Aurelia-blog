@@ -1,0 +1,8 @@
+<template>
+  <require from="../resources/elements/post-list.html"></require>
+  <post-list error.bind="error" posts.bind="posts">
+      <div class="alert alert-dark">
+        Viewing posts from ${archive}
+      </div>
+  </post-list>
+</template>
