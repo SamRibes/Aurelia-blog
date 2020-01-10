@@ -9,10 +9,28 @@ export class Create {
   error: Error = new Error('');
   post: any;
   router: Router ;
+  allTags: any;
 
   constructor(Router:Router, PostService: PostService) {
     this.router = Router;
     this.postService = PostService;
+  }
+
+  attached() {
+
+    this.post = {
+      title: '',
+      body: '',
+      tags: []
+    }
+
+    this.postService.allTags().then(data => {
+      var tags1:any = data;
+     this.allTags = tags1.tags;
+     console.log(this.allTags);
+   }).catch(error => {
+     this.error = error.message;
+   });
   }
 
   createPost(){    

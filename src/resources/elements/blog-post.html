@@ -10,7 +10,7 @@
     </div>
 
     <div class="card-footer text-muted">
-      Created at ${post.createdAt | dateFormat}
+      Written by ${post.author} on ${post.createdAt | dateFormat}
       <a route-href="route: tag-view; params.bind: {tag}" repeat.for="tag of post.tags">
         <span class="badge badge-pill badge-info">${tag}</span>
       </a>

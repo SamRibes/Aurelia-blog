@@ -8,6 +8,21 @@
       <label for="body">Body</label>
       <textarea class="form-control" rows="10" value.bind="post.body"></textarea>
     </div>
+
+    <hr>
+    <div class="form-group">
+      <div class="form-check" repeat.for="tag of allTags">
+        <input type="checkbox" class="form-check-input" value.bind="tag" checked.bind="post.tags">
+        <label class="form-check-label">
+          <span class="badge badge-pill badge-info">${tag}</span>
+        </label>
+      </div>
+    </div>
+    <hr>
+
     <button type="submit" class="btn btn-primary">Create Post</button>
+
+
+
   </form>
 </template>

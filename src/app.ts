@@ -1,11 +1,10 @@
 import { EventAggregator } from 'aurelia-event-aggregator';
 import { PostService } from './common/services/post-service';
-import { inject } from "aurelia-framework";
 import { RouterConfiguration, Router } from 'aurelia-router';
-import { PLATFORM } from 'aurelia-framework';
+import { PLATFORM, autoinject } from 'aurelia-framework';
 import { AuthService } from "./common/services/auth-service";
 
-@inject(EventAggregator, PostService, AuthService)
+@autoinject
 export class App {
   router: Router;
   postService: PostService;
@@ -15,7 +14,6 @@ export class App {
   subscription: any;
   error: Error = new Error('');
   tags: any;
-  tags1: any;
   archives: any;
   archives1: any;
 
@@ -40,8 +38,8 @@ export class App {
     }
     
     this.postService.allTags().then(data => {
-      this.tags1 = data;
-      this.tags = this.tags1.tags;
+      var tags1:any = data;
+      this.tags = tags1.tags;
     }).catch(error => {
       this.error = error.message;
     });
